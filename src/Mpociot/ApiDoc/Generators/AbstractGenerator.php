@@ -4,6 +4,7 @@ namespace Mpociot\ApiDoc\Generators;
 
 use Faker\Factory;
 use ReflectionClass;
+use Illuminate\Contracts\Validation\Rule;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Mpociot\Reflection\DocBlock;
