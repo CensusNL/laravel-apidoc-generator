@@ -497,6 +497,10 @@ abstract class AbstractGenerator
     {
         $parameters = [];
 
+        if($rules instanceof Rule) {
+            $rules = (string) $rules;
+        }
+
         // The format for specifying validation rules and parameters follows an
         // easy {rule}:{parameters} formatting convention. For instance the
         // rule "Max:3" states that the value may only be three letters.
